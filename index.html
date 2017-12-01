@@ -1,0 +1,55 @@
+<!doctype>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <style>
+	    li {
+	        margin: 0;
+	        padding: 0;
+	        list-style: none;
+	        display: inline-block;
+	        width:100%;
+	    }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+    	<div class="row">
+    		<div class="basket col-12">
+    			<h1>ACME Supermarket</h1>
+    			<h2>Your Basket</h2>
+    			<div class="table-responsive">
+		            <table id="basket" width="100%" class="table table-striped">
+		            	<thead>
+		            		<tr>
+			            		<th></th>
+			            		<th>Item</th>
+			            		<th>Price</th>
+			            		<th>Quantity</th>
+			            		<th>SubTotal</th>
+			            	</tr>
+		            	</thead>
+		            	<tbody id="basketItems">
+		            		
+		            		
+		            	</tbody>
+		            	<tfoot>
+		            		<tr class="basket__totals">
+		            			<td colspan="5" align="right"><strong>Total:</strong> <span class="basket__total">£0.00</span></td>
+		            		</tr>
+		            	</tfoot>
+		            </table>
+	        	</div>
+        	</div>
+        </div>
+        <div class="row">
+            <ul id="productList" class="product">
+            </ul>
+        </div>
+    </div>
+    <script src="build/main.bundle.js"></script>
+</body>
+
+</html>

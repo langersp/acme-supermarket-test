@@ -1,23 +1,23 @@
 {
   "name": "acme-supermarket",
   "version": "1.0.0",
-  "description": "ACME JavaScript Test",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require babel-polyfill --compilers js:babel-register",
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "start": "http-server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ag-digital/acme-supermarket-test.git"
-  },
-  "keywords": [
-    "javascript",
-    "test"
-  ],
-  "author": "",
+  "author": "paul langley",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ag-digital/acme-supermarket-test/issues"
-  },
-  "homepage": "https://github.com/ag-digital/acme-supermarket-test#readme"
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.1.2",
+    "http-server": "^0.10.0",
+    "mocha": "^4.0.1"
+  }
 }
